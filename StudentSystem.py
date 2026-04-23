@@ -14,16 +14,21 @@
 #Create object
 #Call set_details()
 #Call display()
-class student:
-    school_name="XYZ School"
+class Student:
+    school_name = "XYZ School"   
+
     def set_details(self):
-        self.name="vamsi"
-        self.marks=85
+        self.name = "Vamsi"
+        self.marks = 85
+
     def display(self):
-        print("Name: ",self.name)
-        print("Marks: ",self.marks)
-        print("School:",student.school_name)
-o=student()
-o.set_details()
-o.display()
+        print("Name:", self.name)
+        print("Marks:", self.marks)
+        print("School Name:", self.school_name)
+
+
+
+s = Student()      
+s.set_details()    
+s.display()        
 

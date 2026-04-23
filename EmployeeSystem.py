@@ -1,18 +1,21 @@
-class Employee :
-    company = "Infosys"
+class Employee:
+    company = "Infosys"   
+
     def set_data(self):
-        self.name="Ravi"
-        self.salary=20000
+        self.name = "Ravi"
+        self.salary = 20000
+
     def increase_salary(self):
-        self.salary=self.salary+5000
+        self.salary += 5000
+
     def display(self):
-        print("Company ",Employee.company)
-        print("Name: ", self.name)
-        print("salary: ", self.salary)
-
-k=Employee()
-k.set_data()
-k.increase_salary()
-k.display()
+        print("Company:", self.company)
+        print("Name:", self.name)
+        print("Salary:", self.salary)
 
 
+
+e = Employee()          
+e.set_data()            
+e.increase_salary()    
+e.display()             
