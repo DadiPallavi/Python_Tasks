@@ -1,5 +1,6 @@
+# 🧩 Task 1: Student System
 class Student:
-    school_name = "XYZ School"   
+    school_name = "XYZ School"
 
     def set_details(self):
         self.name = "Vamsi"
@@ -11,13 +12,15 @@ class Student:
         print("School Name:", self.school_name)
 
 
+# 👉 Outside the class:
+s = Student()
+s.set_details()
+s.display()
 
-s = Student()      
-s.set_details()    
-s.display()   
 
+# 🧩 Task 2: Employee System
 class Employee:
-    company = "Infosys"   
+    company = "Infosys"
 
     def set_data(self):
         self.name = "Ravi"
@@ -32,26 +35,9 @@ class Employee:
         print("Salary:", self.salary)
 
 
-
-e = Employee()          
-e.set_data()            
-e.increase_salary()    
-e.display()             
-
-
-class Mobile:
-    brand = "Apple"
-    def set_details(self):
-        self.model = "iPhone 14"
-        self.price = 80000
-    def discount(self):
-        self.price = self.price - (self.price * 10 / 100)
-    def show_details(self):
-        print("Brand:", self.brand)
-        print("Model:", self.model)
-        print("Price:", self.price)
-m = Mobile()          
-m.set_details()       
-m.discount()          
-m.show_details() 
+# 👉 Outside the class:
+e = Employee()
+e.set_data()
+e.increase_salary()
+e.display()
 
